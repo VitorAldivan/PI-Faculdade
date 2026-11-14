@@ -41,22 +41,30 @@ class DashboardService:
             return conn.execute(query).mappings().fetchall()
 
     @staticmethod
-    def balanco_financeiro():
+    def faturamento_por_mes():
         with engine.connect() as conn:
             query = text("""
                 SELECT 
-                    p.id_pedido,
-                    c.nome AS cliente,
-                    p.modelo_equipamento,
-                    COALESCE(o.valor_final, o.valor_estimado, 0.0) AS valor_orcado,
-                    COALESCE(SUM(pg.valor_pago), 0.0) AS total_pago,
-                    (COALESCE(o.valor_final, o.valor_estimado, 0.0) - COALESCE(SUM(pg.valor_pago), 0.0)) AS saldo_devedor
-                FROM pedido p
-                INNER JOIN cliente c ON p.id_cliente = c.id_cliente
-                LEFT JOIN orcamento o ON p.id_pedido = o.id_pedido
-                LEFT JOIN pagamento pg ON p.id_pedido = pg.id_pedido
-                GROUP BY p.id_pedido, c.nome, p.modelo_equipamento, o.valor_final, o.valor_estimado
-                ORDER BY saldo_devedor DESC
-                LIMIT 50
+                    strftime('%Y-%m', data_pagamento) AS mes,
+                    SUM(valor_pago) AS total
+                FROM pagamento
+                WHERE status_pagamento = 'Confirmado'
+                GROUP BY strftime('%Y-%m', data_pagamento)
+                ORDER BY mes ASC
+                LIMIT 6
             """)
-            return conn.execute(query).mappings().fetchall()
+            return conn.execute(query).fetchall()
+
+    @staticmethod
+    def distribuicao_tipos_reparo():
+        with engine.connect() as conn:
+            query = text("""
+                SELECT 
+                    tipo_reparo,
+                    COUNT(*) as qtd
+                FROM servico
+                GROUP BY tipo_reparo
+                ORDER BY qtd DESC
+                LIMIT 5
+            """)
+            return conn.execute(query).fetchall()
