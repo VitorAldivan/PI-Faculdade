@@ -40,15 +40,36 @@ class DashboardPage(QWidget):
         self.tabela.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.addWidget(self.tabela)
 
-        # Botão Atualizar
+        # Botão Atualizar e Gerar Relatório PDF
         btn_layout = QHBoxLayout()
+        btn_layout.setSpacing(12)
+        
+        self.btn_pdf = PushButton(FIF.DOCUMENT, "Exportar Relatório Executivo (PDF)", self)
+        self.btn_pdf.clicked.connect(self.exportar_pdf)
+        
         self.btn_refresh = PrimaryPushButton(FIF.SYNC, "Atualizar Indicadores", self)
         self.btn_refresh.clicked.connect(self.carregar_dados)
+        
         btn_layout.addStretch()
+        btn_layout.addWidget(self.btn_pdf)
         btn_layout.addWidget(self.btn_refresh)
         layout.addLayout(btn_layout)
 
         self.carregar_dados()
+
+    def exportar_pdf(self):
+        from src.nova_dps.services.relatorio_service import RelatorioPdfService
+        from qfluentwidgets import InfoBar, InfoBarPosition
+        import os
+        caminho = RelatorioPdfService.gerar_relatorio_gerencial()
+        InfoBar.success(
+            title="Relatório Gerado com Sucesso!",
+            content=f"Arquivo PDF salvo em: {os.path.basename(caminho)}",
+            orient=InfoBarPosition.TOP,
+            isClosable=True,
+            duration=3500,
+            parent=self
+        )
 
     def carregar_dados(self):
         kpis = DashboardService.obter_kpis()
