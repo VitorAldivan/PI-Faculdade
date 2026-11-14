@@ -192,25 +192,36 @@ class DashboardPage(QScrollArea):
 
         self.chart_view_barras.setChart(chart_barras)
 
-        # Montar Gráfico de Rosca Interativo com Legendas Claras
+        # Montar Gráfico de Rosca Interativo com Rótulos Visíveis e Legenda Completa
         dados_reparos = DashboardService.distribuicao_tipos_reparo()
         chart_rosca = QChart()
         chart_rosca.setAnimationOptions(QChart.SeriesAnimations)
         chart_rosca.legend().setVisible(True)
-        chart_rosca.legend().setAlignment(Qt.AlignRight)
+        chart_rosca.legend().setAlignment(Qt.AlignBottom) # Legenda embaixo para não cortar o texto
 
         pie_series = QPieSeries()
-        pie_series.setHoleSize(0.40) # Rosca moderna
+        pie_series.setHoleSize(0.38) # Rosca proporcional
 
         cores_paleta = ["#0078D4", "#2E7D32", "#D83B01", "#8764B8", "#00B7C3"]
         total_reparos = sum(int(qtd) for _, qtd in dados_reparos) or 1
 
         for idx, (reparo, qtd) in enumerate(dados_reparos):
             pct = (int(qtd) / total_reparos) * 100
-            nome_resumido = str(reparo)[:22]
-            fatia = pie_series.append(f"{nome_resumido} ({pct:.0f}%)", int(qtd))
+            nome_completo = str(reparo)
+            
+            # Legenda e fatia com quantidade absoluta e porcentagem visíveis!
+            fatia = pie_series.append(f"{nome_completo} ({qtd} un · {pct:.0f}%)", int(qtd))
             fatia.setColor(QColor(cores_paleta[idx % len(cores_paleta)]))
-            fatia.setLabelVisible(False) # Mantém limpo na rosca e detalhado na legenda
+            
+            # EXIBIR NÚMEROS E PORCENTAGEM DIRETAMENTE NA FATIA!
+            fatia.setLabel(f"{qtd} ({pct:.0f}%)")
+            fatia.setLabelVisible(True)
+            fatia.setLabelPosition(QPieSlice.LabelInsideNormal)
+            fatia.setLabelColor(QColor("white"))
+            fonte_label = QFont()
+            fonte_label.setBold(True)
+            fonte_label.setPointSize(9)
+            fatia.setLabelFont(fonte_label)
 
             # Interatividade de Destaque / Explode ao clicar
             def make_click_handler(slice_ref, nome, q, p):
@@ -219,7 +230,7 @@ class DashboardPage(QScrollArea):
                     self.lbl_rosca_info.setText(f"Destaque: {nome} ➔ {q} chamados ({p:.1f}%)")
                 return handler
 
-            fatia.clicked.connect(make_click_handler(fatia, str(reparo), int(qtd), pct))
+            fatia.clicked.connect(make_click_handler(fatia, nome_completo, int(qtd), pct))
 
         chart_rosca.addSeries(pie_series)
         self.chart_view_rosca.setChart(chart_rosca)

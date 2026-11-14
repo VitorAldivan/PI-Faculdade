@@ -16,6 +16,19 @@ class CrudService:
             """), {"nome": nome, "cpf": cpf_cnpj, "tel": telefone, "email": email, "end": endereco, "bairro": bairro, "cidade": cidade})
 
     @staticmethod
+    def atualizar_cliente(id_cliente, nome, cpf_cnpj, telefone, email, endereco, bairro, cidade):
+        with engine.begin() as conn:
+            conn.execute(text("""
+                UPDATE cliente 
+                SET nome = :nome, cpf_cnpj = :cpf, telefone = :tel, email = :email, 
+                    endereco = :end, bairro = :bairro, cidade = :cidade
+                WHERE id_cliente = :id
+            """), {
+                "nome": nome, "cpf": cpf_cnpj, "tel": telefone, "email": email,
+                "end": endereco, "bairro": bairro, "cidade": cidade, "id": id_cliente
+            })
+
+    @staticmethod
     def inativar_cliente(id_cliente):
         with engine.begin() as conn:
             conn.execute(text("UPDATE cliente SET ativo = 0 WHERE id_cliente = :id"), {"id": id_cliente})
