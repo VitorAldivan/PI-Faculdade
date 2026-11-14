@@ -1,0 +1,131 @@
+id_servico,id_pedido,tecnico_responsavel,tipo_reparo,valor_mao_de_obra,status_servico
+1,1,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Em Andamento
+2,2,Jonny Araujo,Substituição de cooler e limpeza preventiva,90,Pendente
+3,3,Matheus Ferrari,Formatação com backup e reinstalação de drivers,120,Finalizado
+4,4,Matheus Ferrari,Troca de tela LED IPS 15.6 polegadas,180,Em Andamento
+5,5,Luiz Enrique,Troca de CI de Charge e reparo de trilha,280,Finalizado
+6,6,Carlos Eduardo,Troca de tela LED IPS 15.6 polegadas,180,Finalizado
+7,7,Jonny Araujo,Substituição de cooler e limpeza preventiva,90,Finalizado
+8,8,Carlos Eduardo,Formatação com backup e reinstalação de drivers,120,Em Andamento
+9,9,Matheus Ferrari,Formatação com backup e reinstalação de drivers,120,Finalizado
+10,10,Jonny Araujo,Banho químico ultrassônico para desoxidação de placa,220,Pendente
+11,11,Jonny Araujo,Formatação com backup e reinstalação de drivers,120,Em Andamento
+12,12,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Finalizado
+13,13,Matheus Ferrari,Reballing de chipset BGA e troca de pasta térmica,450,Pendente
+14,14,Luiz Enrique,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+15,15,Wellingtton Lima,Gravação de BIOS com programadora Eprom,150,Finalizado
+16,16,Matheus Ferrari,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+17,17,Wellingtton Lima,Banho químico ultrassônico para desoxidação de placa,220,Em Andamento
+18,18,Luiz Enrique,Gravação de BIOS com programadora Eprom,150,Finalizado
+19,19,Luiz Enrique,Troca de conector DC Jack,120,Finalizado
+20,20,Wellingtton Lima,Substituição de cooler e limpeza preventiva,90,Pendente
+21,21,Wellingtton Lima,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+22,22,Carlos Eduardo,Gravação de BIOS com programadora Eprom,150,Pendente
+23,23,Carlos Eduardo,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+24,24,Jonny Araujo,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+25,25,Carlos Eduardo,Substituição de cooler e limpeza preventiva,90,Em Andamento
+26,26,Matheus Ferrari,Gravação de BIOS com programadora Eprom,150,Pendente
+27,27,Luiz Enrique,Troca de CI de Charge e reparo de trilha,280,Finalizado
+28,28,Matheus Ferrari,Gravação de BIOS com programadora Eprom,150,Pendente
+29,29,Wellingtton Lima,Troca de conector DC Jack,120,Pendente
+30,30,Wellingtton Lima,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+31,31,Carlos Eduardo,Substituição de cooler e limpeza preventiva,90,Em Andamento
+32,32,Luiz Enrique,Substituição de cooler e limpeza preventiva,90,Finalizado
+33,33,Wellingtton Lima,Reballing de chipset BGA e troca de pasta térmica,450,Pendente
+34,34,Jonny Araujo,Troca de conector DC Jack,120,Em Andamento
+35,35,Jonny Araujo,Gravação de BIOS com programadora Eprom,150,Pendente
+36,36,Matheus Ferrari,Gravação de BIOS com programadora Eprom,150,Finalizado
+37,37,Wellingtton Lima,Formatação com backup e reinstalação de drivers,120,Finalizado
+38,38,Luiz Enrique,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+39,39,Carlos Eduardo,Substituição de cooler e limpeza preventiva,90,Em Andamento
+40,40,Jonny Araujo,Gravação de BIOS com programadora Eprom,150,Finalizado
+41,41,Luiz Enrique,Troca de CI de Charge e reparo de trilha,280,Finalizado
+42,42,Jonny Araujo,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+43,43,Wellingtton Lima,Formatação com backup e reinstalação de drivers,120,Pendente
+44,44,Matheus Ferrari,Troca de conector DC Jack,120,Em Andamento
+45,45,Wellingtton Lima,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+46,46,Matheus Ferrari,Troca de conector DC Jack,120,Em Andamento
+47,47,Wellingtton Lima,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+48,48,Luiz Enrique,Troca de conector DC Jack,120,Pendente
+49,49,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Pendente
+50,50,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Em Andamento
+51,51,Jonny Araujo,Substituição de cooler e limpeza preventiva,90,Pendente
+52,52,Carlos Eduardo,Gravação de BIOS com programadora Eprom,150,Pendente
+53,53,Carlos Eduardo,Troca de conector DC Jack,120,Pendente
+54,54,Carlos Eduardo,Gravação de BIOS com programadora Eprom,150,Em Andamento
+55,55,Jonny Araujo,Gravação de BIOS com programadora Eprom,150,Pendente
+56,56,Matheus Ferrari,Formatação com backup e reinstalação de drivers,120,Finalizado
+57,57,Wellingtton Lima,Gravação de BIOS com programadora Eprom,150,Pendente
+58,58,Carlos Eduardo,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+59,59,Wellingtton Lima,Troca de CI de Charge e reparo de trilha,280,Finalizado
+60,60,Carlos Eduardo,Formatação com backup e reinstalação de drivers,120,Finalizado
+61,61,Jonny Araujo,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+62,62,Wellingtton Lima,Troca de CI de Charge e reparo de trilha,280,Finalizado
+63,63,Luiz Enrique,Gravação de BIOS com programadora Eprom,150,Finalizado
+64,64,Matheus Ferrari,Troca de CI de Charge e reparo de trilha,280,Pendente
+65,65,Jonny Araujo,Troca de conector DC Jack,120,Em Andamento
+66,66,Jonny Araujo,Formatação com backup e reinstalação de drivers,120,Finalizado
+67,67,Carlos Eduardo,Troca de CI de Charge e reparo de trilha,280,Pendente
+68,68,Matheus Ferrari,Troca de tela LED IPS 15.6 polegadas,180,Finalizado
+69,69,Wellingtton Lima,Substituição de cooler e limpeza preventiva,90,Finalizado
+70,70,Wellingtton Lima,Formatação com backup e reinstalação de drivers,120,Finalizado
+71,71,Luiz Enrique,Troca de tela LED IPS 15.6 polegadas,180,Em Andamento
+72,72,Wellingtton Lima,Troca de CI de Charge e reparo de trilha,280,Finalizado
+73,73,Jonny Araujo,Troca de conector DC Jack,120,Em Andamento
+74,74,Luiz Enrique,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+75,75,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Em Andamento
+76,76,Jonny Araujo,Reballing de chipset BGA e troca de pasta térmica,450,Em Andamento
+77,77,Jonny Araujo,Troca de CI de Charge e reparo de trilha,280,Finalizado
+78,78,Carlos Eduardo,Formatação com backup e reinstalação de drivers,120,Finalizado
+79,79,Jonny Araujo,Substituição de cooler e limpeza preventiva,90,Em Andamento
+80,80,Wellingtton Lima,Troca de tela LED IPS 15.6 polegadas,180,Finalizado
+81,81,Luiz Enrique,Formatação com backup e reinstalação de drivers,120,Finalizado
+82,82,Wellingtton Lima,Formatação com backup e reinstalação de drivers,120,Finalizado
+83,83,Jonny Araujo,Formatação com backup e reinstalação de drivers,120,Finalizado
+84,84,Matheus Ferrari,Formatação com backup e reinstalação de drivers,120,Finalizado
+85,85,Carlos Eduardo,Substituição de cooler e limpeza preventiva,90,Finalizado
+86,86,Matheus Ferrari,Troca de conector DC Jack,120,Pendente
+87,87,Wellingtton Lima,Formatação com backup e reinstalação de drivers,120,Pendente
+88,88,Matheus Ferrari,Troca de CI de Charge e reparo de trilha,280,Finalizado
+89,89,Matheus Ferrari,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+90,90,Wellingtton Lima,Formatação com backup e reinstalação de drivers,120,Pendente
+91,91,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Finalizado
+92,92,Luiz Enrique,Troca de CI de Charge e reparo de trilha,280,Finalizado
+93,93,Luiz Enrique,Gravação de BIOS com programadora Eprom,150,Pendente
+94,94,Luiz Enrique,Banho químico ultrassônico para desoxidação de placa,220,Em Andamento
+95,95,Matheus Ferrari,Substituição de cooler e limpeza preventiva,90,Finalizado
+96,96,Luiz Enrique,Reballing de chipset BGA e troca de pasta térmica,450,Pendente
+97,97,Jonny Araujo,Reballing de chipset BGA e troca de pasta térmica,450,Em Andamento
+98,98,Luiz Enrique,Troca de CI de Charge e reparo de trilha,280,Finalizado
+99,99,Jonny Araujo,Substituição de cooler e limpeza preventiva,90,Pendente
+100,100,Matheus Ferrari,Troca de conector DC Jack,120,Finalizado
+101,101,Jonny Araujo,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+102,102,Luiz Enrique,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+103,103,Carlos Eduardo,Reballing de chipset BGA e troca de pasta térmica,450,Pendente
+104,104,Carlos Eduardo,Formatação com backup e reinstalação de drivers,120,Pendente
+105,105,Luiz Enrique,Substituição de cooler e limpeza preventiva,90,Pendente
+106,106,Wellingtton Lima,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+107,107,Carlos Eduardo,Troca de conector DC Jack,120,Pendente
+108,108,Wellingtton Lima,Banho químico ultrassônico para desoxidação de placa,220,Em Andamento
+109,109,Wellingtton Lima,Substituição de cooler e limpeza preventiva,90,Finalizado
+110,110,Wellingtton Lima,Banho químico ultrassônico para desoxidação de placa,220,Em Andamento
+111,111,Jonny Araujo,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+112,112,Carlos Eduardo,Troca de CI de Charge e reparo de trilha,280,Finalizado
+113,113,Matheus Ferrari,Gravação de BIOS com programadora Eprom,150,Pendente
+114,114,Carlos Eduardo,Reballing de chipset BGA e troca de pasta térmica,450,Pendente
+115,115,Wellingtton Lima,Troca de CI de Charge e reparo de trilha,280,Finalizado
+116,116,Wellingtton Lima,Troca de conector DC Jack,120,Pendente
+117,117,Carlos Eduardo,Banho químico ultrassônico para desoxidação de placa,220,Finalizado
+118,118,Luiz Enrique,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+119,119,Matheus Ferrari,Gravação de BIOS com programadora Eprom,150,Pendente
+120,120,Wellingtton Lima,Gravação de BIOS com programadora Eprom,150,Pendente
+121,121,Carlos Eduardo,Gravação de BIOS com programadora Eprom,150,Pendente
+122,122,Carlos Eduardo,Formatação com backup e reinstalação de drivers,120,Finalizado
+123,123,Matheus Ferrari,Troca de tela LED IPS 15.6 polegadas,180,Pendente
+124,124,Luiz Enrique,Formatação com backup e reinstalação de drivers,120,Finalizado
+125,125,Wellingtton Lima,Troca de CI de Charge e reparo de trilha,280,Finalizado
+126,126,Luiz Enrique,Reballing de chipset BGA e troca de pasta térmica,450,Finalizado
+127,127,Jonny Araujo,Troca de CI de Charge e reparo de trilha,280,Pendente
+128,128,Jonny Araujo,Formatação com backup e reinstalação de drivers,120,Finalizado
+129,129,Jonny Araujo,Formatação com backup e reinstalação de drivers,120,Em Andamento
+130,130,Matheus Ferrari,Banho químico ultrassônico para desoxidação de placa,220,Finalizado

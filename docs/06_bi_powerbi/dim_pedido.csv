@@ -1,0 +1,131 @@
+id_pedido,id_cliente,tipo_equipamento,modelo_equipamento,status_pedido,data_abertura
+1,59,Notebook,MacBook Air M1,Em Manutenção,2026-10-01 07:06:12.728202
+2,41,Servidor,Dell PowerEdge R440,Em Análise,2026-06-29 09:06:12.728202
+3,20,Placa-Mãe,ASUS TUF B550M,Entregue,2026-08-20 05:06:12.728202
+4,28,Notebook,Dell Inspiron 15,Em Manutenção,2026-06-16 04:06:12.728202
+5,5,Servidor,HP ProLiant DL380,Concluído,2026-09-04 07:06:12.728202
+6,49,Servidor,HP ProLiant DL380,Entregue,2026-09-25 06:06:12.728202
+7,2,Placa-Mãe,ASUS TUF B550M,Concluído,2026-09-03 09:06:12.728202
+8,41,Desktop,PC Gamer RTX 4060,Em Manutenção,2026-10-22 05:06:12.728202
+9,18,Placa-Mãe,Gigabyte B450M DS3H,Concluído,2026-06-25 09:06:12.728202
+10,33,Notebook,Dell Inspiron 15,Aberto,2026-10-10 06:06:12.728202
+11,43,Servidor,Lenovo ThinkSystem SR650,Em Manutenção,2026-08-01 08:06:12.728202
+12,20,Placa-Mãe,ASUS TUF B550M,Entregue,2026-06-30 08:06:12.728202
+13,19,Notebook,Dell Inspiron 15,Em Análise,2026-10-02 08:06:12.728202
+14,22,Placa-Mãe,ASRock Steel Legend,Aberto,2026-11-10 10:06:12.728202
+15,1,Servidor,Dell PowerEdge R440,Entregue,2026-08-07 07:06:12.728202
+16,42,Notebook,MacBook Air M1,Entregue,2026-05-22 01:06:12.728202
+17,38,Placa-Mãe,ASUS TUF B550M,Em Manutenção,2026-11-02 08:06:12.728202
+18,7,Placa-Mãe,ASRock Steel Legend,Entregue,2026-06-12 05:06:12.728202
+19,11,Notebook,HP Pavilion 14,Entregue,2026-09-08 02:06:12.728202
+20,10,Desktop,PC Escritório Core i3,Aberto,2026-08-04 02:06:12.728202
+21,8,Notebook,HP Pavilion 14,Em Análise,2026-09-07 07:06:12.728202
+22,36,Desktop,Workstation Intel i7 12700,Em Análise,2026-07-14 05:06:12.728202
+23,11,Notebook,Dell Inspiron 15,Concluído,2026-10-06 09:06:12.728202
+24,2,Servidor,Dell PowerEdge R440,Em Análise,2026-08-04 03:06:12.728202
+25,44,Placa-Mãe,MSI MAG B650,Em Manutenção,2026-08-04 06:06:12.728202
+26,44,Notebook,Acer Aspire 5,Em Análise,2026-05-30 07:06:12.728202
+27,51,Servidor,HP ProLiant DL380,Concluído,2026-05-27 03:06:12.728202
+28,13,Servidor,Lenovo ThinkSystem SR650,Em Análise,2026-08-15 06:06:12.728202
+29,37,Desktop,PC Gamer Ryzen 5 5600,Aberto,2026-09-20 06:06:12.728202
+30,48,Notebook,Lenovo ThinkPad E14,Concluído,2026-09-09 07:06:12.728202
+31,3,Desktop,PC Escritório Core i3,Em Manutenção,2026-07-04 08:06:12.728202
+32,58,Placa-Mãe,Gigabyte B450M DS3H,Entregue,2026-09-12 02:06:12.728202
+33,27,Placa-Mãe,MSI MAG B650,Aberto,2026-09-02 05:06:12.728202
+34,17,Placa-Mãe,MSI MAG B650,Em Manutenção,2026-09-06 01:06:12.728202
+35,8,Servidor,Lenovo ThinkSystem SR650,Em Análise,2026-09-15 03:06:12.728202
+36,34,Desktop,Workstation Intel i7 12700,Entregue,2026-08-06 07:06:12.728202
+37,34,Notebook,HP Pavilion 14,Entregue,2026-09-28 05:06:12.728202
+38,14,Desktop,PC Gamer RTX 4060,Entregue,2026-11-01 04:06:12.728202
+39,60,Servidor,Dell PowerEdge R440,Em Manutenção,2026-05-30 08:06:12.728202
+40,57,Desktop,PC Escritório Core i3,Entregue,2026-07-30 05:06:12.728202
+41,55,Placa-Mãe,MSI MAG B650,Entregue,2026-06-26 01:06:12.728202
+42,54,Desktop,PC Gamer RTX 4060,Entregue,2026-06-10 06:06:12.728202
+43,28,Servidor,Lenovo ThinkSystem SR650,Aberto,2026-06-07 06:06:12.728202
+44,5,Servidor,HP ProLiant DL380,Em Manutenção,2026-10-20 07:06:12.728202
+45,59,Placa-Mãe,Gigabyte B450M DS3H,Aberto,2026-07-31 08:06:12.728202
+46,42,Desktop,PC Escritório Core i3,Em Manutenção,2026-08-14 05:06:12.728202
+47,33,Servidor,Dell PowerEdge R440,Em Análise,2026-07-15 10:06:12.728202
+48,15,Notebook,Acer Aspire 5,Em Análise,2026-06-12 08:06:12.728202
+49,18,Notebook,MacBook Air M1,Em Análise,2026-06-12 08:06:12.728202
+50,40,Desktop,Workstation Intel i7 12700,Em Manutenção,2026-05-31 02:06:12.728202
+51,54,Notebook,Asus VivoBook 15,Em Análise,2026-09-07 01:06:12.728202
+52,29,Servidor,HP ProLiant DL380,Aberto,2026-07-24 03:06:12.728202
+53,23,Desktop,Workstation Intel i7 12700,Em Análise,2026-09-10 07:06:12.728202
+54,49,Desktop,PC Gamer Ryzen 5 5600,Em Manutenção,2026-10-03 06:06:12.728202
+55,22,Desktop,PC Escritório Core i3,Aberto,2026-08-27 02:06:12.728202
+56,45,Desktop,PC Escritório Core i3,Concluído,2026-08-05 05:06:12.728202
+57,1,Desktop,PC Gamer RTX 4060,Aberto,2026-05-26 06:06:12.728202
+58,12,Servidor,HP ProLiant DL380,Entregue,2026-06-10 03:06:12.728202
+59,34,Desktop,Workstation Intel i7 12700,Entregue,2026-06-07 05:06:12.728202
+60,6,Notebook,MacBook Air M1,Entregue,2026-06-23 04:06:12.728202
+61,3,Notebook,Acer Aspire 5,Aberto,2026-08-11 10:06:12.728202
+62,13,Placa-Mãe,ASUS TUF B550M,Entregue,2026-06-05 09:06:12.728202
+63,37,Servidor,Lenovo ThinkSystem SR650,Entregue,2026-07-24 07:06:12.728202
+64,51,Notebook,Acer Aspire 5,Aberto,2026-08-25 07:06:12.728202
+65,32,Placa-Mãe,ASRock Steel Legend,Em Manutenção,2026-08-28 01:06:12.728202
+66,57,Placa-Mãe,MSI MAG B650,Concluído,2026-10-31 09:06:12.728202
+67,5,Placa-Mãe,ASUS TUF B550M,Aberto,2026-08-29 03:06:12.728202
+68,2,Placa-Mãe,MSI MAG B650,Entregue,2026-11-01 03:06:12.728202
+69,12,Servidor,Lenovo ThinkSystem SR650,Entregue,2026-11-02 05:06:12.728202
+70,9,Notebook,Asus VivoBook 15,Entregue,2026-08-30 06:06:12.728202
+71,27,Servidor,HP ProLiant DL380,Em Manutenção,2026-08-19 01:06:12.728202
+72,34,Placa-Mãe,ASUS TUF B550M,Concluído,2026-07-27 04:06:12.728202
+73,4,Desktop,PC Gamer RTX 4060,Em Manutenção,2026-07-31 01:06:12.728202
+74,29,Servidor,Lenovo ThinkSystem SR650,Entregue,2026-10-06 01:06:12.728202
+75,55,Placa-Mãe,ASRock Steel Legend,Em Manutenção,2026-07-02 06:06:12.728202
+76,56,Servidor,HP ProLiant DL380,Em Manutenção,2026-10-29 06:06:12.728202
+77,51,Placa-Mãe,ASUS TUF B550M,Entregue,2026-06-15 02:06:12.728202
+78,7,Desktop,PC Gamer RTX 4060,Entregue,2026-07-29 08:06:12.728202
+79,42,Placa-Mãe,Gigabyte B450M DS3H,Em Manutenção,2026-06-06 09:06:12.728202
+80,30,Desktop,Workstation Intel i7 12700,Concluído,2026-07-28 04:06:12.728202
+81,33,Servidor,Lenovo ThinkSystem SR650,Concluído,2026-09-07 02:06:12.728202
+82,27,Desktop,PC Gamer RTX 4060,Concluído,2026-10-21 10:06:12.728202
+83,13,Placa-Mãe,MSI MAG B650,Concluído,2026-09-30 05:06:12.728202
+84,33,Placa-Mãe,ASUS TUF B550M,Entregue,2026-06-26 03:06:12.728202
+85,7,Notebook,HP Pavilion 14,Concluído,2026-06-26 01:06:12.728202
+86,45,Servidor,Lenovo ThinkSystem SR650,Em Análise,2026-09-20 09:06:12.728202
+87,11,Servidor,Lenovo ThinkSystem SR650,Aberto,2026-06-10 03:06:12.728202
+88,10,Desktop,PC Escritório Core i3,Entregue,2026-07-17 10:06:12.728202
+89,12,Servidor,HP ProLiant DL380,Entregue,2026-06-17 09:06:12.728202
+90,33,Placa-Mãe,ASRock Steel Legend,Em Análise,2026-08-05 08:06:12.728202
+91,18,Placa-Mãe,ASUS TUF B550M,Concluído,2026-09-13 10:06:12.728202
+92,49,Servidor,Dell PowerEdge R440,Entregue,2026-10-05 04:06:12.728202
+93,51,Notebook,Lenovo ThinkPad E14,Em Análise,2026-08-24 07:06:12.728202
+94,34,Placa-Mãe,ASRock Steel Legend,Em Manutenção,2026-07-17 09:06:12.728202
+95,41,Servidor,HP ProLiant DL380,Entregue,2026-08-18 05:06:12.728202
+96,58,Desktop,PC Gamer RTX 4060,Em Análise,2026-06-07 04:06:12.728202
+97,44,Notebook,Acer Aspire 5,Em Manutenção,2026-09-01 06:06:12.728202
+98,5,Placa-Mãe,MSI MAG B650,Entregue,2026-09-26 04:06:12.728202
+99,50,Desktop,Workstation Intel i7 12700,Aberto,2026-07-31 03:06:12.728202
+100,4,Servidor,Dell PowerEdge R440,Entregue,2026-10-17 07:06:12.728202
+101,26,Desktop,PC Escritório Core i3,Entregue,2026-06-24 02:06:12.728202
+102,48,Placa-Mãe,MSI MAG B650,Entregue,2026-06-24 08:06:12.728202
+103,11,Placa-Mãe,ASRock Steel Legend,Em Análise,2026-05-29 03:06:12.728202
+104,59,Desktop,PC Gamer RTX 4060,Aberto,2026-07-19 02:06:12.728202
+105,17,Placa-Mãe,ASRock Steel Legend,Em Análise,2026-08-06 08:06:12.728202
+106,18,Notebook,HP Pavilion 14,Entregue,2026-11-07 09:06:12.728202
+107,58,Placa-Mãe,MSI MAG B650,Aberto,2026-06-13 05:06:12.728202
+108,45,Servidor,HP ProLiant DL380,Em Manutenção,2026-07-17 10:06:12.728202
+109,4,Notebook,Dell Inspiron 15,Entregue,2026-09-27 08:06:12.728202
+110,22,Notebook,Asus VivoBook 15,Em Manutenção,2026-08-24 10:06:12.728202
+111,11,Servidor,Lenovo ThinkSystem SR650,Aberto,2026-10-29 02:06:12.728202
+112,4,Placa-Mãe,ASUS TUF B550M,Entregue,2026-08-12 06:06:12.728202
+113,17,Desktop,PC Gamer RTX 4060,Em Análise,2026-06-27 02:06:12.728202
+114,20,Desktop,PC Gamer RTX 4060,Em Análise,2026-08-16 07:06:12.728202
+115,59,Servidor,Lenovo ThinkSystem SR650,Entregue,2026-10-18 05:06:12.728202
+116,54,Placa-Mãe,MSI MAG B650,Em Análise,2026-07-23 01:06:12.728202
+117,10,Placa-Mãe,MSI MAG B650,Entregue,2026-10-16 04:06:12.728202
+118,25,Notebook,Dell Inspiron 15,Entregue,2026-11-10 08:06:12.728202
+119,44,Desktop,Workstation Intel i7 12700,Aberto,2026-08-05 05:06:12.728202
+120,11,Notebook,MacBook Air M1,Aberto,2026-10-11 07:06:12.728202
+121,54,Notebook,Lenovo ThinkPad E14,Aberto,2026-07-19 07:06:12.728202
+122,55,Servidor,HP ProLiant DL380,Concluído,2026-07-06 07:06:12.728202
+123,27,Placa-Mãe,ASRock Steel Legend,Aberto,2026-09-22 03:06:12.728202
+124,49,Placa-Mãe,MSI MAG B650,Entregue,2026-06-27 06:06:12.728202
+125,42,Notebook,Asus VivoBook 15,Entregue,2026-10-30 05:06:12.728202
+126,20,Servidor,HP ProLiant DL380,Entregue,2026-06-29 02:06:12.728202
+127,56,Desktop,PC Gamer RTX 4060,Em Análise,2026-07-26 05:06:12.728202
+128,1,Servidor,HP ProLiant DL380,Entregue,2026-10-05 09:06:12.728202
+129,43,Desktop,PC Escritório Core i3,Em Manutenção,2026-09-22 08:06:12.728202
+130,17,Servidor,Lenovo ThinkSystem SR650,Entregue,2026-07-12 04:06:12.728202

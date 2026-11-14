@@ -1,0 +1,61 @@
+id_cliente,nome,telefone,email,bairro,cidade,uf
+1,Sophie Cassiano,71 8943-5763,andre08@example.com,Cursino,São Paulo,SP
+2,Guilherme da Paz,68 2643-3718,novaesmelissa@example.net,Ipiranga,São Paulo,SP
+3,Vitor Albuquerque,31 8692-1853,rodriguesyuri@example.com,Pinheiros,São Paulo,SP
+4,Gabriela Melo,+55 86 2926-2345,luiz-henrique13@example.net,Mooca,São Paulo,SP
+5,Rodrigo Lima,81 9050-0782,vicente38@example.org,Vila Mariana,São Paulo,SP
+6,Alexandre Oliveira,+55 16 5576-7887,da-conceicaolivia@example.net,Mooca,São Paulo,SP
+7,Dr. Felipe Campos,+55 68 5253-2777,maria-laurafernandes@example.org,Tatuapé,São Paulo,SP
+8,Dr. Enzo Cassiano,83 1242-3750,vieirabarbara@example.org,Pinheiros,São Paulo,SP
+9,Benicio das Neves,16 4621-6977,garagao@example.net,Sacomã,São Paulo,SP
+10,Matheus Moura,15 0966-3359,novaesmaria-sophia@example.net,Vila Mariana,São Paulo,SP
+11,Anthony Gabriel Azevedo,34 4214-9137,vitoria27@example.com,Saúde,São Paulo,SP
+12,Isabella Mendes,+55 48 8955-8138,marcelosantos@example.com,Mooca,São Paulo,SP
+13,Théo Barros,+55 71 3655-7488,manuella95@example.org,Jabaquara,São Paulo,SP
+14,Beatriz Machado,+55 94 3924-6179,pedro-henrique69@example.org,Saúde,São Paulo,SP
+15,Sara Cavalcante,94 6696-0895,mayaferreira@example.net,Tatuapé,São Paulo,SP
+16,Esther das Neves,+55 85 8619-2675,ada-mota@example.com,Vila Mariana,São Paulo,SP
+17,Maria Laura Correia,89 3196-3339,luiz-fernandomachado@example.org,Pinheiros,São Paulo,SP
+18,Alana Nogueira,13 8445-4617,freitastheodoro@example.com,Mooca,São Paulo,SP
+19,Bella Pacheco,+55 21 6775-8485,emanuellaaragao@example.com,Mooca,São Paulo,SP
+20,Benício Pinto,49 3016-1835,pbarbosa@example.com,Tatuapé,São Paulo,SP
+21,Jade Lima,+55 12 1327-8875,guilherme05@example.org,Pinheiros,São Paulo,SP
+22,Eloah Casa Grande,+55 98 1521-4753,manuelagarcia@example.com,Ipiranga,São Paulo,SP
+23,Maria Flor Nogueira,45 1286-1599,eloah49@example.com,Mooca,São Paulo,SP
+24,Ana Beatriz Aragão,81 9212-5787,amandapacheco@example.com,Mooca,São Paulo,SP
+25,Sra. Elisa Lopes,+55 75 8047-0018,rochaisaque@example.com,Bela Vista,São Paulo,SP
+26,Léo Silveira,93 9365-8189,yan64@example.org,Vila Mariana,São Paulo,SP
+27,Manuella Mendes,0500 875 3150,maria-laura79@example.com,Ipiranga,São Paulo,SP
+28,Mathias Barbosa,+55 33 9739-1160,correiajoao-vitor@example.org,Saúde,São Paulo,SP
+29,Sr. Isaac Siqueira,+55 77 6763-4903,rebeca48@example.com,Sacomã,São Paulo,SP
+30,Melina da Mata,37 5058-2348,aragaomarcelo@example.com,Vila Mariana,São Paulo,SP
+31,Dante Campos,+55 16 6333-9388,maria-lauraviana@example.com,Mooca,São Paulo,SP
+32,Gabriel Fogaça,81 2487-7051,paulo89@example.org,Saúde,São Paulo,SP
+33,Luiz Henrique Andrade,+55 87 1690-5030,teixeiraisis@example.com,Vila Mariana,São Paulo,SP
+34,Noah Lopes,+55 35 1223-9102,sarah24@example.org,Jabaquara,São Paulo,SP
+35,Ana Sophia Garcia,+55 43 5749-8450,luiz-fernandoda-costa@example.net,Ipiranga,São Paulo,SP
+36,Stella Brito,+55 54 2573-3300,lfernandes@example.org,Ipiranga,São Paulo,SP
+37,Milena Azevedo,17 3582-9901,icasa-grande@example.net,Vila Mariana,São Paulo,SP
+38,Otto da Cruz,68 8374-1000,ffonseca@example.net,Sacomã,São Paulo,SP
+39,José Pedro Cirino,66 5908-3120,wbarbosa@example.com,Jabaquara,São Paulo,SP
+40,Maria Liz Fogaça,47 7065-4723,pachecoenrico@example.org,Vila Mariana,São Paulo,SP
+41,Sr. Vinicius Freitas,+55 87 1127-3727,luanaborges@example.org,Mooca,São Paulo,SP
+42,Juliana Gomes,+55 77 8815-0491,carvalhodavi-luiz@example.net,Tatuapé,São Paulo,SP
+43,Srta. Alice Ramos,+55 44 7833-5863,vpinto@example.org,Jabaquara,São Paulo,SP
+44,Arthur Gabriel Melo,0500 300 3310,juliana26@example.com,Bela Vista,São Paulo,SP
+45,Sr. Lucca da Paz,+55 35 5112-2572,pmoraes@example.com,Ipiranga,São Paulo,SP
+46,Melissa Moraes,+55 45 4015-2454,silvamatheus@example.org,Saúde,São Paulo,SP
+47,Luiz Gustavo Ribeiro,47 1157-1153,gabrieloliveira@example.com,Vila Mariana,São Paulo,SP
+48,Liam Montenegro,+55 21 3876-1054,alana08@example.com,Saúde,São Paulo,SP
+49,Heitor Gonçalves,+55 95 6487-1369,iannogueira@example.com,Vila Mariana,São Paulo,SP
+50,Sr. Rhavi Nascimento,0300 860 6930,ana-cecilia40@example.net,Tatuapé,São Paulo,SP
+51,João Guilherme Cirino,71 1953-1530,ana-vitoriacorreia@example.net,Tatuapé,São Paulo,SP
+52,Benjamin Fogaça,+55 99 9039-8580,fariasluiz-otavio@example.com,Cursino,São Paulo,SP
+53,Brenda Vasconcelos,+55 91 6442-7389,leaomatheus@example.com,Jabaquara,São Paulo,SP
+54,Thales Silveira,+55 14 6908-9761,mendoncadavi-lucas@example.net,Sacomã,São Paulo,SP
+55,Olívia Ribeiro,47 7946-9302,dnovaes@example.org,Bela Vista,São Paulo,SP
+56,Dr. Enrico Silveira,+55 81 6047-7004,bribeiro@example.org,Saúde,São Paulo,SP
+57,Mariane Porto,+55 77 3576-9908,qnovais@example.net,Vila Mariana,São Paulo,SP
+58,Vinícius Vargas,66 9905-6246,isis95@example.com,Ipiranga,São Paulo,SP
+59,João Lucas Novais,47 8780-2612,zcasa-grande@example.net,Mooca,São Paulo,SP
+60,Bruno Silva,+55 27 3209-2809,kpeixoto@example.net,Mooca,São Paulo,SP
