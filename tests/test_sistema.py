@@ -44,11 +44,14 @@ def test_fila_servicos_pendentes():
 
 def test_insercao_e_exclusao_logica_cliente():
     """Testa a integridade do CRUD garantindo que exclusões são lógicas e dados válidos são persistidos."""
-    nome_teste = "Cliente Teste Unitário Automatizado"
+    import time
+    timestamp = int(time.time())
+    nome_teste = f"Cliente Teste Unitario {timestamp}"
+    cpf_teste = f"999.{timestamp % 1000:03d}.{timestamp % 999:03d}-99"
     tel_teste = "(11) 99999-8888"
     
     # Inserção
-    CrudService.salvar_cliente(nome_teste, "000.111.222-33", tel_teste, "teste@novadps.com", "Rua Teste, 100", "Ipiranga")
+    CrudService.salvar_cliente(nome_teste, cpf_teste, tel_teste, "teste@novadps.com", "Rua Teste, 100", "Ipiranga")
     
     with engine.connect() as conn:
         cliente_cadastrado = conn.execute(text("SELECT id_cliente, ativo FROM cliente WHERE nome = :n"), {"n": nome_teste}).mappings().fetchone()
