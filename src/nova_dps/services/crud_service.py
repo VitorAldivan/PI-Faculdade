@@ -8,12 +8,22 @@ class CrudService:
             return conn.execute(text("SELECT id_cliente, nome, cpf_cnpj, telefone, email, bairro, cidade FROM cliente WHERE ativo = 1 ORDER BY id_cliente DESC")).mappings().fetchall()
 
     @staticmethod
-    def salvar_cliente(nome, cpf_cnpj, telefone, email, endereco, bairro):
+    def salvar_cliente(nome, cpf_cnpj, telefone, email, endereco, bairro, cidade="São Paulo"):
         with engine.begin() as conn:
             conn.execute(text("""
-                INSERT INTO cliente (nome, cpf_cnpj, telefone, email, endereco, bairro)
-                VALUES (:nome, :cpf, :tel, :email, :end, :bairro)
-            """), {"nome": nome, "cpf": cpf_cnpj, "tel": telefone, "email": email, "end": endereco, "bairro": bairro})
+                INSERT INTO cliente (nome, cpf_cnpj, telefone, email, endereco, bairro, cidade)
+                VALUES (:nome, :cpf, :tel, :email, :end, :bairro, :cidade)
+            """), {"nome": nome, "cpf": cpf_cnpj, "tel": telefone, "email": email, "end": endereco, "bairro": bairro, "cidade": cidade})
+
+    @staticmethod
+    def inativar_cliente(id_cliente):
+        with engine.begin() as conn:
+            conn.execute(text("UPDATE cliente SET ativo = 0 WHERE id_cliente = :id"), {"id": id_cliente})
+
+    @staticmethod
+    def atualizar_status_pedido(id_pedido, novo_status):
+        with engine.begin() as conn:
+            conn.execute(text("UPDATE pedido SET status_pedido = :st WHERE id_pedido = :id"), {"st": novo_status, "id": id_pedido})
 
     @staticmethod
     def listar_pedidos():

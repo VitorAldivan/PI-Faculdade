@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QHeaderView, QTableWidgetItem
 from qfluentwidgets import (
-    TableWidget, PrimaryPushButton, FluentIcon as FIF, TitleLabel, CaptionLabel
+    TableWidget, PrimaryPushButton, LineEdit, ComboBox,
+    FluentIcon as FIF, TitleLabel, CaptionLabel, InfoBar, InfoBarPosition
 )
 from src.nova_dps.services.crud_service import CrudService
 
@@ -20,6 +21,32 @@ class PedidosPage(QWidget):
         layout.addWidget(title)
         layout.addWidget(subtitle)
 
+        # Formulário Rápido de Abertura de Ordem de Serviço
+        form_row = QHBoxLayout()
+        form_row.setSpacing(10)
+
+        self.cb_clientes = ComboBox(self)
+        self.cb_clientes.setPlaceholderText("Selecione o Cliente")
+
+        self.cb_tipo = ComboBox(self)
+        self.cb_tipo.addItems(["Notebook", "Desktop", "Placa-Mãe", "Servidor", "Monitor"])
+
+        self.txt_modelo = LineEdit(self)
+        self.txt_modelo.setPlaceholderText("Marca e Modelo (ex: Dell G15)")
+
+        self.txt_falha = LineEdit(self)
+        self.txt_falha.setPlaceholderText("Defeito Relatado")
+
+        self.btn_salvar = PrimaryPushButton(FIF.ADD, "Abrir Nova OS", self)
+        self.btn_salvar.clicked.connect(self.salvar_pedido)
+
+        form_row.addWidget(self.cb_clientes, 2)
+        form_row.addWidget(self.cb_tipo, 1)
+        form_row.addWidget(self.txt_modelo, 2)
+        form_row.addWidget(self.txt_falha, 2)
+        form_row.addWidget(self.btn_salvar, 1)
+        layout.addLayout(form_row)
+
         self.tabela = TableWidget(self)
         self.tabela.setBorderVisible(True)
         self.tabela.setBorderRadius(8)
@@ -28,7 +55,38 @@ class PedidosPage(QWidget):
         self.tabela.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.addWidget(self.tabela)
 
+        self.carregar_clientes_combo()
         self.carregar_pedidos()
+
+    def carregar_clientes_combo(self):
+        self.cb_clientes.clear()
+        clientes = CrudService.listar_clientes()
+        self.clientes_map = {}
+        for c in clientes:
+            texto = f"#{c['id_cliente']} - {c['nome']}"
+            self.cb_clientes.addItem(texto)
+            self.clientes_map[texto] = c['id_cliente']
+
+    def salvar_pedido(self):
+        cliente_txt = self.cb_clientes.currentText()
+        tipo = self.cb_tipo.currentText()
+        modelo = self.txt_modelo.text().strip()
+        falha = self.txt_falha.text().strip()
+
+        if cliente_txt and modelo and falha:
+            id_cliente = self.clientes_map.get(cliente_txt)
+            if id_cliente:
+                CrudService.salvar_pedido(id_cliente, tipo, modelo, falha, "Aberto")
+                self.txt_modelo.clear()
+                self.txt_falha.clear()
+                self.carregar_pedidos()
+                InfoBar.success(
+                    title="Ordem de Serviço Aberta!",
+                    content=f"Equipamento {modelo} registrado com sucesso para {cliente_txt}!",
+                    orient=InfoBarPosition.TOP,
+                    duration=3000,
+                    parent=self
+                )
 
     def carregar_pedidos(self):
         pedidos = CrudService.listar_pedidos()
