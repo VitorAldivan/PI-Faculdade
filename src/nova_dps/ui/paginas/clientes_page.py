@@ -68,6 +68,9 @@ class ClientesPage(QWidget):
         self.carregar_clientes()
 
     def salvar_cliente(self):
+        from src.nova_dps.services.validadores import validar_cpf, validar_telefone, validar_email
+        from qfluentwidgets import InfoBar, InfoBarPosition
+
         nome = self.txt_nome.text().strip()
         cpf = self.txt_cpf.text().strip()
         tel = self.txt_tel.text().strip()
@@ -76,8 +79,52 @@ class ClientesPage(QWidget):
         bairro = self.txt_bairro.text().strip()
         cidade = self.txt_cidade.text().strip() or "São Paulo"
         
-        if nome and tel:
-            CrudService.salvar_cliente(nome, cpf, tel, email, endereco, bairro)
+        # 1. Validação de Nome Obrigatório
+        if not nome or len(nome) < 3:
+            InfoBar.warning(
+                title="Nome Inválido",
+                content="Por favor, informe o nome completo do cliente (mínimo 3 caracteres).",
+                orient=InfoBarPosition.TOP,
+                duration=3500,
+                parent=self
+            )
+            return
+
+        # 2. Validação de Telefone Obrigatório
+        if not tel or not validar_telefone(tel):
+            InfoBar.warning(
+                title="Telefone Inválido",
+                content="Informe um telefone com DDD válido (ex: 11987654321 ou (11) 98765-4321).",
+                orient=InfoBarPosition.TOP,
+                duration=3500,
+                parent=self
+            )
+            return
+
+        # 3. Validação de CPF
+        if cpf and not validar_cpf(cpf):
+            InfoBar.warning(
+                title="CPF Inválido",
+                content="O CPF digitado não possui os dígitos verificadores válidos segundo a Receita Federal.",
+                orient=InfoBarPosition.TOP,
+                duration=3500,
+                parent=self
+            )
+            return
+
+        # 4. Validação de E-mail
+        if email and not validar_email(email):
+            InfoBar.warning(
+                title="E-mail Inválido",
+                content="O formato do e-mail é inválido (exemplo correto: cliente@email.com).",
+                orient=InfoBarPosition.TOP,
+                duration=3500,
+                parent=self
+            )
+            return
+
+        try:
+            CrudService.salvar_cliente(nome, cpf, tel, email, endereco, bairro, cidade)
             self.txt_nome.clear()
             self.txt_cpf.clear()
             self.txt_tel.clear()
@@ -86,6 +133,21 @@ class ClientesPage(QWidget):
             self.txt_bairro.clear()
             self.txt_cidade.clear()
             self.carregar_clientes()
+            InfoBar.success(
+                title="Cliente Cadastrado com Sucesso!",
+                content=f"{nome} foi cadastrado com dados e localização validados.",
+                orient=InfoBarPosition.TOP,
+                duration=3000,
+                parent=self
+            )
+        except Exception as e:
+            InfoBar.error(
+                title="Erro ao Cadastrar Cliente",
+                content=str(e),
+                orient=InfoBarPosition.TOP,
+                duration=4000,
+                parent=self
+            )
 
     def carregar_clientes(self):
         clientes = CrudService.listar_clientes()

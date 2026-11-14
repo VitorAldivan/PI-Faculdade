@@ -26,6 +26,11 @@ class CrudService:
             conn.execute(text("UPDATE pedido SET status_pedido = :st WHERE id_pedido = :id"), {"st": novo_status, "id": id_pedido})
 
     @staticmethod
+    def atualizar_status_servico(id_servico, novo_status):
+        with engine.begin() as conn:
+            conn.execute(text("UPDATE servico SET status_servico = :st WHERE id_servico = :id"), {"st": novo_status, "id": id_servico})
+
+    @staticmethod
     def listar_pedidos():
         with engine.connect() as conn:
             return conn.execute(text("""

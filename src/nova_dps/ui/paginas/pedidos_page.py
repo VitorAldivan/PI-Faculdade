@@ -96,5 +96,34 @@ class PedidosPage(QWidget):
             self.tabela.setItem(row_idx, 1, QTableWidgetItem(str(p['cliente'])))
             self.tabela.setItem(row_idx, 2, QTableWidgetItem(str(p['tipo_equipamento'])))
             self.tabela.setItem(row_idx, 3, QTableWidgetItem(str(p['modelo_equipamento'])))
-            self.tabela.setItem(row_idx, 4, QTableWidgetItem(str(p['status_pedido'])))
+            
+            # ComboBox Interativo com as 3 opções solicitadas
+            cb_status = ComboBox(self)
+            cb_status.addItems(["Pendente", "Em Andamento", "Finalizado"])
+            
+            status_banco = str(p['status_pedido'])
+            # Normalizar status para as 3 opções
+            if status_banco in ["Concluído", "Entregue", "Finalizado"]:
+                cb_status.setCurrentText("Finalizado")
+            elif status_banco in ["Em Andamento", "Em Manutenção", "Em Análise"]:
+                cb_status.setCurrentText("Em Andamento")
+            else:
+                cb_status.setCurrentText("Pendente")
+
+            # Conectar alteração imediata no banco
+            cb_status.currentTextChanged.connect(
+                lambda novo_st, id_p=p['id_pedido']: self.on_status_changed(id_p, novo_st)
+            )
+            self.tabela.setCellWidget(row_idx, 4, cb_status)
+
             self.tabela.setItem(row_idx, 5, QTableWidgetItem(str(p['data_abertura'])[:16]))
+
+    def on_status_changed(self, id_pedido, novo_status):
+        CrudService.atualizar_status_pedido(id_pedido, novo_status)
+        InfoBar.success(
+            title="Status Atualizado",
+            content=f"OS #{id_pedido} atualizada para: {novo_status}",
+            orient=InfoBarPosition.TOP,
+            duration=2000,
+            parent=self
+        )
