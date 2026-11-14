@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QHeaderView, QTableWidgetItem
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QHeaderView, QTableWidgetItem, QAbstractItemView
 from qfluentwidgets import (
     TableWidget, PrimaryPushButton, PushButton, LineEdit,
     FluentIcon as FIF, TitleLabel, SubtitleLabel, CaptionLabel
@@ -60,8 +60,9 @@ class ClientesPage(QWidget):
         self.tabela = TableWidget(self)
         self.tabela.setBorderVisible(True)
         self.tabela.setBorderRadius(8)
+        self.tabela.setEditTriggers(QAbstractItemView.NoEditTriggers) # TABELA SOMENTE LEITURA / NÃO EDITÁVEL!
         self.tabela.setColumnCount(7)
-        self.tabela.setHorizontalHeaderLabels(["ID", "Nome", "CPF/CNPJ", "Telefone", "E-mail", "Bairro", "Cidade"])
+        self.tabela.setHorizontalHeaderLabels(["ID (Fixo)", "Nome", "CPF/CNPJ", "Telefone", "E-mail", "Bairro", "Cidade"])
         self.tabela.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.addWidget(self.tabela)
 

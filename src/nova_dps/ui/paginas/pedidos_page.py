@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QHeaderView, QTableWidgetItem
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QHeaderView, QTableWidgetItem, QAbstractItemView
 from qfluentwidgets import (
     TableWidget, PrimaryPushButton, LineEdit, ComboBox,
     FluentIcon as FIF, TitleLabel, CaptionLabel, InfoBar, InfoBarPosition
@@ -50,8 +50,9 @@ class PedidosPage(QWidget):
         self.tabela = TableWidget(self)
         self.tabela.setBorderVisible(True)
         self.tabela.setBorderRadius(8)
+        self.tabela.setEditTriggers(QAbstractItemView.NoEditTriggers) # IDs e dados inalteráveis manualmente
         self.tabela.setColumnCount(6)
-        self.tabela.setHorizontalHeaderLabels(["ID Pedido", "Cliente", "Tipo", "Modelo", "Status", "Data Entrada"])
+        self.tabela.setHorizontalHeaderLabels(["ID OS (Fixo)", "Cliente", "Tipo", "Modelo", "Status", "Data Entrada"])
         self.tabela.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.addWidget(self.tabela)
 

@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QHeaderView, QTableWidgetItem
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QHeaderView, QTableWidgetItem, QAbstractItemView
 from qfluentwidgets import TableWidget, TitleLabel, CaptionLabel
 from src.nova_dps.services.crud_service import CrudService
 
@@ -21,8 +21,9 @@ class PecasPage(QWidget):
         self.tabela = TableWidget(self)
         self.tabela.setBorderVisible(True)
         self.tabela.setBorderRadius(8)
+        self.tabela.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.tabela.setColumnCount(7)
-        self.tabela.setHorizontalHeaderLabels(["ID", "Código", "Componente / Peça", "Fornecedor", "Qtd", "Custo", "Venda"])
+        self.tabela.setHorizontalHeaderLabels(["ID Peça (Fixo)", "Código SKU", "Componente / Peça", "Fornecedor", "Qtd", "Custo", "Venda"])
         self.tabela.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.addWidget(self.tabela)
 
